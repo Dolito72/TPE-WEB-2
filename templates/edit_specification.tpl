@@ -18,7 +18,7 @@
         </div>
        
         <div class="col">
-        <input type="" class="form-control" name="id_especificacion" value="{$especificacion->id_especificacion}">
+        <input type="hidden" class="form-control" name="id_especificacion" value="{$especificacion->id_especificacion}">
     </div>
     </div>
     <button type="submit" class="btn btn-primary mt-2">Guardar</button>

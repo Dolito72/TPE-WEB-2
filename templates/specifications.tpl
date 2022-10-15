@@ -1,8 +1,9 @@
 <!-- lista de especificaciones -->
 {include file="header.tpl"}
 <h1 class=" mt-3 mb-3  text-center">{$titulo}</h1>
+<div class="bg-image" style="background-image: url('.//images/himalayan.jpg'); opacity:0.8">
 
-<table class="table ">
+<table class="table">
 <thead class="table-light" >
         <tr>
             <th scope="col">Modelo</th>
@@ -10,11 +11,12 @@
             <th scope="col">Cilindrada</th>
             <th scope="col">Potencia</th>
             {if isset($smarty.session.USER_ID)}
-            <th scope="colspan=2-">Acciones</th>
+            <th scope="col">Acciones</th>
+            <th scope="col">      </th>
             {/if}
         </tr>
         </thead>
-        <tbody class="table-group-divider">
+        <tbody class="table-group-divider text-white">
             {foreach from=$especificaciones item=$especificacion}
             <tr>
                 <td>{$especificacion->modelo}</td>
@@ -36,6 +38,6 @@
             {/foreach}
         </tbody>
 </table>
-
+</div>
 
 {include file="footer.tpl"}

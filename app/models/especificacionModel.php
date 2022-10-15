@@ -70,6 +70,7 @@ class EspecificacionModel
 
         return $this->db->lastInsertId();
     }
+
    
     // edita una especificacion en la base de datos
     public function editSpecification($especificacion){

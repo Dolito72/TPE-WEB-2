@@ -1,6 +1,6 @@
 {include 'header.tpl'}
 
-<div class="mt-5 w-25 mx-auto">
+<div class="mt-5 mb-5 w-25 mx-auto">
     <form method="POST" action="validate">
         <div class="form-group">
             <label for="email">Email</label>
@@ -20,5 +20,6 @@
     </form>
 </div>
 
+<img src=".//images/scram2.jpg" class="d-block - mx-auto - mb-3 " alt="moto" />
 {include file='footer.tpl'}
 

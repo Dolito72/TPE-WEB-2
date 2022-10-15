@@ -3,8 +3,8 @@
 
 <h1 class="mt-3 mb-3 text-center">{$titulo}</h1>
 
-
 <table class="table rounded  p-2 text-dark bg -opacity-10">
+
     <thead class="table-light" >
         <tr >
             <th scope="col">Modelo</th>
@@ -36,6 +36,5 @@
         {/foreach}
     </tbody>
 </table>
-
 
 {include file="footer.tpl"}

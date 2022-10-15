@@ -2,6 +2,8 @@
 <!-- formulario de alta de producto-->
 
 <h2 class=" mt-3 mb-3 text-center">{$titulo}</h2>
+
+
 <form action="add/product" method="POST" class="my-4">
     <div class="row">
         <div class="col">
@@ -25,4 +27,5 @@
     <button type="submit" class="btn btn-secondary mt-3 mb-3">Guardar</button>
 </form>
 
+<img src=".//images/himalayan.jpg" class="d-block - mx-auto - mb-3 " alt="moto" />
 {include file="footer.tpl"}

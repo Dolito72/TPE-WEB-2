@@ -1,5 +1,5 @@
 {include file="header.tpl"}
-
+<div class="mt-3 mb-3 text-center">
 <h4 class="mt-3 mb-3  text-center" >{$titulo}</h4>
 <!-- filtra productos por especificacion-->
 
@@ -16,10 +16,8 @@
   </div>
 </form>
 
-
-
 <table class= "table mx-auto w-75 p-3 mt-3 mb-3 rounded  p-2 text-dark bg-opacity-10">
-<thead  class="table-light">
+<thead>
     <tr>
       <th scope="col">Modelo</th>
       <th scope="col">Color</th>
@@ -38,5 +36,6 @@
         {/foreach}
     </tbody>
 </table>
+<img src=".//images/scram.jpg" class="w-75   d-block - mx-auto - mb-3 " alt="moto" />
 
 {include file="footer.tpl"}

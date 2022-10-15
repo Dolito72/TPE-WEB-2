@@ -7,7 +7,7 @@ class EspecificacionView {
     public function __construct() {
         $this->smarty = new Smarty(); // inicializo Smarty
     }
-
+    
     function showEspecifications($especifications) {
         // asigno variables al tpl smarty
         $this->smarty->assign('titulo', "Tabla de especificaciones"); 

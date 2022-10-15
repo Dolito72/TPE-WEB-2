@@ -15,9 +15,8 @@
         </div>
         <div class="col">
             <select name="id_especificacion"  class="form-select" aria-label="Default select example">
-                <option selected>Selecciona un modelo</option>
-                {foreach from=$especificaciones item=$especificacion}
-                    <option value={$especificacion->id_especificacion}>{$especificacion->modelo}</option>
+                {foreach from=$especificaciones item = $especificacion}
+                    <option  {if ($producto->id_especificacion == $especificacion->id_especificacion)} selected {/if} value="{$especificacion->id_especificacion}">{$especificacion->modelo}</option>
                 {/foreach}
             </select>
         </div>
