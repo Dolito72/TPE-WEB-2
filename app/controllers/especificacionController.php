@@ -67,11 +67,12 @@ class EspecificacionController{
     public function deleteSpecification($id){
         $this->authHelper->checkLoggedIn();
         $productos = $this->modelProduct->searchProductsBySpecification($id);
-        if (count($productos)>0){
+        if(count($productos)>0){
             $this->view->showError();
         }
-        else
+        else{
             $this->model->deleteSpecificationById($id);
             header("Location: " . BASE_URL . 'specifications');
+        }
     }
 }

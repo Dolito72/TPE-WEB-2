@@ -22,4 +22,3 @@
 
 <img src=".//images/scram2.jpg" class="d-block - mx-auto - mb-3 " alt="moto" />
 {include file='footer.tpl'}
-

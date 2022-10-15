@@ -80,7 +80,6 @@ class EspecificacionModel
         try {
             $query->execute([$especificacion->modelo, $especificacion->descripcion, $especificacion->cilindrada,
                 $especificacion->potencia, $especificacion->id_especificacion ]);
-        
         } 
         catch(PDOException $e) {
             var_dump($e);
@@ -94,8 +93,8 @@ class EspecificacionModel
         try{
             $query->execute([$id]);
         }
-        catch (PDOException $e){
-            ($e);
+        catch(PDOException $e){
+            var_dump($e);
         }
     }
 }

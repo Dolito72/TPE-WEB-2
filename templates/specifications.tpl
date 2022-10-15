@@ -1,7 +1,7 @@
 <!-- lista de especificaciones -->
 {include file="header.tpl"}
 <h1 class=" mt-3 mb-3  text-center">{$titulo}</h1>
-<div class="bg-image" style="background-image: url('.//images/himalayan.jpg'); opacity:0.8">
+<div class="bg-image" style="background-image: url('.//images/himalayan.jpg'); opacity:0.8"> 
 
 <table class="table">
 <thead class="table-light" >
