@@ -5,16 +5,16 @@
 <form action="update/specification" method="POST" class="my-4">
     <div class="row">
         <div class="col">
-            <input type="text" class="form-control" name="modelo" value="{$especificacion->modelo}" placeholder="Modelo" aria-label="Modelo">
+            <input type="text" class="form-control" name="modelo" value="{$especificacion->modelo}" placeholder="Modelo" aria-label="Modelo" required>
         </div>
         <div class="col">
-            <input type="text" class="form-control" name="descripcion" value="{$especificacion->descripcion}" placeholder="Descripcion" aria-label="Descripcion">
+            <input type="text" class="form-control" name="descripcion" value="{$especificacion->descripcion}" placeholder="Descripcion" aria-label="Descripcion" required>
         </div>
         <div class="col">
-            <input type="text" class="form-control" name="cilindrada" value="{$especificacion->cilindrada}" placeholder="Cilindrada" aria-label="Cilindrada">
+            <input type="text" class="form-control" name="cilindrada" value="{$especificacion->cilindrada}" placeholder="Cilindrada" aria-label="Cilindrada" required>
         </div>
         <div class="col">
-            <input type="text" class="form-control" name="potencia" value="{$especificacion->potencia}" placeholder="Potencia" aria-label="Potencia">
+            <input type="text" class="form-control" name="potencia" value="{$especificacion->potencia}" placeholder="Potencia" aria-label="Potencia" required>
         </div>
        
         <div class="col">

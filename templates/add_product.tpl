@@ -7,16 +7,16 @@
 <form action="add/product" method="POST" class="my-4">
     <div class="row">
         <div class="col">
-            <input type="text" class="form-control" name="precio" placeholder="Precio" aria-label="Precio">
+            <input type="text" class="form-control" name="precio" placeholder="Precio" aria-label="Precio" required>
         </div>
         <div class="col">
-            <input type="text" class="form-control" name="color" placeholder="Color" aria-label="Color">
+            <input type="text" class="form-control" name="color" placeholder="Color" aria-label="Color" required>
         </div>
         <div class="col">
-            <input type="text" class="form-control" name="stock" placeholder="Stock" aria-label="Stock">
+            <input type="text" class="form-control" name="stock" placeholder="Stock" aria-label="Stock" required>
         </div>
         <div class="col">
-           <select name ="id_especificacion" class="form-select" aria-label="Default select example">
+           <select name ="id_especificacion" class="form-select" aria-label="Default select example" required>
            <option selected>Selecciona un modelo</option>
                 {foreach from=$especificaciones item=$especificacion}
                     <option value={$especificacion->id_especificacion}>{$especificacion->modelo}</option>
