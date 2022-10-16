@@ -13,53 +13,52 @@
 </head>
 
 <body>
-<header class="mx-auto w-80 p-3">
-<!-- <img src=".//images/scram.jpg" class="w-80 " alt="moto" />-->
-    <nav class=" navbar navbar-expand-lg bg-light  Regular shadow ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="home"> <img src=".//images/logo2.png" alt="Royal Enfield" width="80"
-                            height="50">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+    <header class="mx-auto w-80 p-3">
+        <nav class=" navbar navbar-expand-lg bg-light  Regular shadow ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home"> <img src=".//images/logo2.png" alt="Royal Enfield" width="80" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="products">Productos</a>
+                        </li>
+                        {if isset($smarty.session.USER_ID)}
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="products">Productos</a>
+                                <a class="nav-link" aria-current="page" href="add/product">Agregar Producto</a>
                             </li>
-                            {if isset($smarty.session.USER_ID)}
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="add/product">Agregar Producto</a>
-                                </li>
-                            {/if}
+                        {/if}
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="products/specification">Productos por
+                                especificación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="specifications">Especificaciones</a>
+                        </li>
+                        {if isset($smarty.session.USER_ID)}
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="products/specification">Productos por
-                                    especificación</a>
+                                <a class="nav-link" aria-current="page" href="add/specification">Agregar
+                                    Especificación</a>
                             </li>
+                        {/if}
+                        {if !isset($smarty.session.USER_ID)}
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="specifications">Especificaciones</a>
+                                <a class="nav-link" aria-current="page" href="login">Login</a>
                             </li>
-                            {if isset($smarty.session.USER_ID)}
-                                <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="add/specification">Agregar
-                                        Especificación</a>
-                                </li>
-                            {/if}
-                            {if !isset($smarty.session.USER_ID)}
-                                <li class="nav-item">
-                                  <a class="nav-link" aria-current="page" href="login">Login</a>
-                                </li>
-                            {else} 
-                                <li class="nav-item ml-auto">
-                                  <a class="nav-link" aria-current="page" href="logout">Logout ({$smarty.session.USER_EMAIL})</a>
-                                </li>
-                            {/if}
-                        </ul>
-                    </div>
+                        {else}
+                            <li class="nav-item ml-auto">
+                                <a class="nav-link" aria-current="page" href="logout">Logout
+                                    ({$smarty.session.USER_EMAIL})</a>
+                            </li>
+                        {/if}
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
     </header>
 
     <!-- inicio main container     -->

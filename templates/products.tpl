@@ -3,8 +3,7 @@
 
 <h1 class="mt-3 mb-3 text-center">{$titulo}</h1>
 
-<table class="table rounded  p-2 text-dark bg -opacity-10">
-
+<table class="table rounded ml-5  p-2 text-dark bg -opacity-10"> 
     <thead class="table-light" >
         <tr >
             <th scope="col">Modelo</th>
@@ -12,9 +11,11 @@
             <th scope="col">Stock</th>
             <th scope="col">Precio</th>
             <th scope="col"></th>
+            {if isset($smarty.session.USER_ID)}
             <th class= "scope:col text center">Acciones</th>
             <th scope="col"></th>
             <th scope="col"></th>
+            {/if}
         </tr>
     </thead>
     <tbody class="table-group-divider" >
