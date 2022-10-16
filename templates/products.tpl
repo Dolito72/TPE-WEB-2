@@ -11,7 +11,10 @@
             <th scope="col">Color</th>
             <th scope="col">Stock</th>
             <th scope="col">Precio</th>
-            <th scope="colspan=2  align-self-center " >Acciones</th>
+            <th scope="col"></th>
+            <th class= "scope:col text center">Acciones</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
         </tr>
     </thead>
     <tbody class="table-group-divider" >

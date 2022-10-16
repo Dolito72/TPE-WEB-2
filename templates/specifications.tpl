@@ -11,8 +11,8 @@
             <th scope="col">Cilindrada</th>
             <th scope="col">Potencia</th>
             {if isset($smarty.session.USER_ID)}
-            <th scope="col">Acciones</th>
-            <th scope="col">      </th>
+            <th class= "scope:col text center">Acciones</th>
+            <th scope="col"> </th>
             {/if}
         </tr>
         </thead>
